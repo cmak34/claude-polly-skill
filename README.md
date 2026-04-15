@@ -17,7 +17,7 @@ A simple Claude Code skill for generating MP3 speech files from text using AWS P
 
 **As a Claude Code Skill (recommended):**
 ```bash
-git clone https://github.com/<your-username>/claude-polly-skill.git ~/.claude/skills/claude-polly-skill
+git clone https://github.com/cmak34/claude-polly-skill.git ~/.claude/skills/claude-polly-skill
 cd ~/.claude/skills/claude-polly-skill
 ```
 
