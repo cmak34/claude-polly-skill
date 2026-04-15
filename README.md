@@ -355,7 +355,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Hugo Mak** — [cmak34@centennialcollege.ca](mailto:cmak34@centennialcollege.ca)
+**Hugo Mak** — [cmak34@my.centennialcollege.ca](mailto:cmak34@my.centennialcollege.ca)
 
 ## Acknowledgments
 
