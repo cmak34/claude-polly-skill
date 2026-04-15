@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Generated output
+output/
+test_output/
+*.mp3
+
+# Python
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

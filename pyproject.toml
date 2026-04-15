@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-polly-skill"
+version = "0.1.0"
+description = "A Claude Code skill for generating MP3 speech from text using AWS Polly. Supports plain text and SSML."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Hugo Mak", email = "cmak34@centennialcollege.ca" }
+]
+requires-python = ">=3.9"
+keywords = ["aws", "polly", "tts", "text-to-speech", "claude", "claude-code", "ssml"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "boto3>=1.34",
+    "click>=8.1",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hugomak/claude-polly-skill"
+Repository = "https://github.com/hugomak/claude-polly-skill"
+Issues = "https://github.com/hugomak/claude-polly-skill/issues"
+
+[project.scripts]
+polly = "polly:cli"
+
+[tool.setuptools]
+py-modules = ["polly"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
